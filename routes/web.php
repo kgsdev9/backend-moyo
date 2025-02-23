@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\Payment\NotificationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 
+
+
+// payment.status
+Route::get('/notication/payment', [NotificationController::class, 'notificationPaymentStatus'])->name('payment.status');

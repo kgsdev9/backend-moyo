@@ -15,7 +15,7 @@ class CreateSoldesTable extends Migration
     {
         Schema::create('soldes', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->integer('solde');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

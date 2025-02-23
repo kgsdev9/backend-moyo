@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Solde extends Model
 {
     use HasFactory;
+
+  
 }
